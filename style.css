@@ -1,0 +1,150 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.main-container{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s;
+
+} 
+body.light-mode{
+    color: white;
+}
+body.dark-mode {
+    background-color: black;
+    color: black;
+}
+
+.bgclr-1{
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: orange;
+    border-radius:73% 27% 100% 0% / 0% 0% 100% 100%;
+}
+.bgclr-2{
+    width: 25%;
+    height: 45%;
+    position: absolute;
+    left: 1152px;
+    background-color: orange;
+    border-radius: 100% 0% 0% 100% / 0% 100% 0% 100%;
+}
+#todo-container {
+    width: 450px;
+    padding: 15px;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    position: absolute;
+    left: 550px;
+    top: 100px;
+    background: transparent;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+body.dark-mode #todo-container{
+    color: black;
+    box-shadow: 0 0 10px rgb(247, 190, 1);
+}
+h2{
+    margin-bottom: 15px;
+}
+input[type="text"] {
+    padding: 17px;
+    width: 70%;
+    border: 1px solid orange;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+body.dark-mode input{
+    background-color: rgb(204, 202, 202);
+
+}
+::placeholder{
+    font-size: 17px;
+}
+button {
+    padding: 17px;
+    width: 20%;
+    border: none;
+    background-color: orange;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+body.dark-mode button{
+   color: black;
+}
+button:hover {
+    background-color: rgb(249, 174, 34);
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    background: white;
+    color: rgb(111, 109, 109);
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+body.dark-mode li{
+    color: rgb(111, 109, 109);
+    /* background-color: black; */
+}
+li span {
+    flex: 1;
+}
+li button {
+    width: 10%;
+    padding: 0px;
+    font-size: 13px;
+    background-color: transparent;
+}
+li button:hover {
+    transform: scale(1.2,1.2);
+    background-color: transparent;
+}
+.completed {
+    text-decoration: line-through;
+    color: black;
+}
+.complete-button,
+body.dark-mode .complete-button {
+   color: green;
+}
+.edit-button,
+body.dark-mode .edit-button{
+    color: blue;
+}
+.delete-button,
+body.dark-mode .delete-button{
+    color: red;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+#modesbutton{
+    width: 7%;
+    padding: 7px;
+    border-radius: 50px;
+    position: absolute;
+    left: 90%;
+    top: 10px;
+}
+.moon{
+    color: black;
+}
+.sun{
+    color: yellow;
+}
